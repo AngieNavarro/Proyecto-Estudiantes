@@ -1,0 +1,79 @@
+<!-- Modal de Confirmación (puede ir fuera del contenedor si lo deseas) -->
+<div class="modal fade" id="confirmacionModal" tabindex="-1" aria-labelledby="confirmacionModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="confirmacionModalLabel">Confirmación</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¿Desea eliminar al estudiante <strong>{{ estudianteAEliminar?.nombre }}</strong>?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-danger" (click)="confirmarEliminacion()">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Toast Container: posición fija en la esquina inferior derecha -->
+<div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
+  <div id="eliminacionToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header bg-danger text-white">
+      <strong class="me-auto">Notificación</strong>
+      <small>Ahora</small>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      <strong>Contrato <span id="nombreToast"></span> eliminado correctamente.</strong>
+    </div>
+  </div>
+</div>
+
+<!-- Contenedor principal -->
+<div class="container mt-5">
+  <!-- Card que envuelve el contenido -->
+  <div class="card shadow-lg">
+    <div class="card-header bg-purple-light  text-center">
+      <h5 class="mb-0">Lista de Estudiantes</h5>
+    </div>
+    <div class="card-body">
+      <button class="btn btn-primary mb-3" (click)="nuevo()"><i class="bi bi-person-plus" style="font-size: 20px;"></i></button>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+          <thead class="table-dark">
+            <tr>
+              <th>Nombres</th>
+              <th>Documento</th>
+              <th>Edad</th>
+              <th>Género</th>
+              <th>Teléfono</th>
+              <th>Correo</th>
+              <th>Curso</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let estudiante of listaEstudiante">
+              <td>{{ estudiante.nombre + ' ' + estudiante.apellidos }}</td>
+              <td>{{ estudiante.documento }}</td>
+              <td>{{ estudiante.edad }}</td>
+              <td>{{ estudiante.genero }}</td>
+              <td>{{ estudiante.celular }}</td>
+              <td>{{ estudiante.correo }}</td>
+              <td>{{ estudiante.curso }}</td>
+              <td>
+                <button class="btn btn-sm btn-warning me-2" (click)="editar(estudiante)">
+                  <i class="bi bi-pencil-square"></i>
+                </button>
+                <button class="btn btn-sm btn-danger" (click)="eliminar(estudiante)">
+                  <i class="bi bi-trash3-fill"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div> <!-- table-responsive -->
+    </div> <!-- card-body -->
+  </div> <!-- card -->
+</div> <!-- container -->

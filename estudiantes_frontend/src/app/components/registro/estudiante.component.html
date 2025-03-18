@@ -1,0 +1,60 @@
+<div *ngIf="errores.length > 0" class="alert alert-danger">
+  <strong>Errores:</strong>
+  <ul>
+    <li *ngFor="let error of errores">{{ error }}</li>
+  </ul>
+</div>
+<div *ngIf="mensaje!='' " class="alert alert-info">
+  <strong>{{mensaje}}</strong>
+</div>
+
+
+<div class="container mt-5">
+  <form [formGroup]="formEstudiante">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre Completo</label>
+          <input type="text" class="form-control" id="nombre" formControlName="nombre">
+        </div>
+        <div class="mb-3">
+          <label for="apellidos" class="form-label">Apellidos</label>
+          <input type="text" class="form-control" id="apellidos" formControlName="apellidos">
+        </div>
+        <div class="mb-3">
+          <label for="documento" class="form-label">Documento</label>
+          <input type="text" class="form-control" id="documento" formControlName="documento">
+        </div>
+        <div class="mb-3">
+          <label for="edad" class="form-label">Edad</label>
+          <input type="text" class="form-control" id="edad" formControlName="edad">
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label for="genero" class="form-label">Género</label>
+          <input type="text" class="form-control" id="genero" formControlName="genero">
+        </div>
+        <div class="mb-3">
+          <label for="celular" class="form-label">Celular</label>
+          <input type="text" class="form-control" id="celular" formControlName="celular">
+        </div>
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="correo" formControlName="correo">
+        </div>
+        <div class="mb-3">
+          <label for="curso" class="form-label">Curso</label>
+          <input type="text" class="form-control" id="curso" formControlName="curso">
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex gap-2 mt-3">
+      <button type="button" class="btn btn-danger" (click)="volver()"><i class="bi bi-arrow-left-circle" style="font-size: 20px;"></i></button>
+
+      <button type="button" class="btn btn-primary" (click)="guardar()">{{nombre_boton}}</button>
+    </div>
+  </form>
+</div>

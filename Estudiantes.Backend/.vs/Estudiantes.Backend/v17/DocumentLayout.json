@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\Platzi\\Angular\\Angular_dotNet\\Estudiantes.Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6E7D15A8-4024-436E-B590-E9651F06825B}|Estudiantes.Backend\\Estudiantes.Backend.csproj|c:\\users\\usuario\\onedrive\\documentos\\platzi\\angular\\angular_dotnet\\estudiantes.backend\\estudiantes.backend\\controllers\\estudiantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E7D15A8-4024-436E-B590-E9651F06825B}|Estudiantes.Backend\\Estudiantes.Backend.csproj|solutionrelative:estudiantes.backend\\controllers\\estudiantescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E7D15A8-4024-436E-B590-E9651F06825B}|Estudiantes.Backend\\Estudiantes.Backend.csproj|c:\\users\\usuario\\onedrive\\documentos\\platzi\\angular\\angular_dotnet\\estudiantes.backend\\estudiantes.backend\\estudiantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E7D15A8-4024-436E-B590-E9651F06825B}|Estudiantes.Backend\\Estudiantes.Backend.csproj|solutionrelative:estudiantes.backend\\estudiantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EstudiantesController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\Platzi\\Angular\\Angular_dotNet\\Estudiantes.Backend\\Estudiantes.Backend\\Controllers\\EstudiantesController.cs",
+              "RelativeDocumentMoniker": "Estudiantes.Backend\\Controllers\\EstudiantesController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\Platzi\\Angular\\Angular_dotNet\\Estudiantes.Backend\\Estudiantes.Backend\\Controllers\\EstudiantesController.cs",
+              "RelativeToolTip": "Estudiantes.Backend\\Controllers\\EstudiantesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T19:27:51.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Estudiantes.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\Platzi\\Angular\\Angular_dotNet\\Estudiantes.Backend\\Estudiantes.Backend\\Estudiantes.cs",
+              "RelativeDocumentMoniker": "Estudiantes.Backend\\Estudiantes.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\Platzi\\Angular\\Angular_dotNet\\Estudiantes.Backend\\Estudiantes.Backend\\Estudiantes.cs",
+              "RelativeToolTip": "Estudiantes.Backend\\Estudiantes.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAiwAwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T18:28:30.38Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

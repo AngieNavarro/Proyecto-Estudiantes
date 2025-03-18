@@ -1,0 +1,44 @@
+/* Estilos específicos para el componente de formulario de empleado */
+.bg-purple-light {
+  background-color: var(--purple-light) !important;
+}
+
+.bg-purple-medium {
+  background-color: var(--purple-medium) !important;
+}
+
+.bg-purple-dark {
+  background-color: var(--purple-dark) !important;
+}
+
+.text-purple {
+  color: var(--purple-dark) !important;
+}
+/*
+.btn-purple {
+  background-color: var(--purple-dark) !important;
+  border-color: var(--purple-dark) !important;
+  color: white !important;
+} */
+
+.btn-purple {
+  background-color: #6b46c1 !important;
+  border-color: #6b46c1 !important;
+  color: white !important;
+}
+
+.form-control:focus {
+  border-color: var(--purple-medium) !important;
+  box-shadow: 0 0 0 0.25rem rgba(128, 90, 213, 0.25) !important;
+}
+
+.card-header-purple {
+  background-color: var(--purple-light) !important;
+  color: var(--purple-dark) !important;
+  border-bottom: 1px solid var(--purple-medium) !important;
+}
+
+.card-purple {
+  border-color: var(--purple-medium) !important;
+}
+
