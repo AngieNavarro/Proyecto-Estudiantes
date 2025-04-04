@@ -5,14 +5,14 @@
         "src": "estudiantes_frontend/package.json",
         "use": "@vercel/static-build",
         "config": {
-          "distDir": "dist/estudiantes_frontend"
+          "distDir": "dist/estudiantes_frontend/browser"
         }
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "/browser/index.html"
+        "dest": "/index.html"
       }
     ]
   }
