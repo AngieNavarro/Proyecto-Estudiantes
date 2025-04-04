@@ -20,7 +20,7 @@ export class EstudianteComponent implements OnInit {
   public formBuild = inject(FormBuilder);
   public errores: string[] = []; // Almacenar los errores de validación
   public listaEstudiante: Estudiante[] = [];
-  public nombre_boton: string = "Guardar";
+  public nombre_boton: string = "Registro";
   public mensaje: string = "";
 
 
@@ -101,7 +101,7 @@ export class EstudianteComponent implements OnInit {
     servicio.subscribe({
       next: (data) => {
         if (data.isSuccess) {
-          this.mensaje = "Modificación exitosa!"
+          this.mensaje =this.idEstudiante===0? "Registro exitosa!":"Actualización exitosa";
           // Espera 2 segundos (2000 milisegundos) antes de navegar
           setTimeout(() => {
             this.router.navigate(['/']);
