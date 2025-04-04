@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "estudiantes_frontend/package.json",
+        "src": "/estudiantes_frontend/package.json",
         "use": "@vercel/static-build",
         "config": {
         "distDir": "/estudiantes_frontend/dist/estudiantes_frontend/browser"
